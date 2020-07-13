@@ -1,0 +1,35 @@
+﻿<Page
+    x:Class="Ex1.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Ex1"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="auto"></ColumnDefinition>
+            <ColumnDefinition Width="auto"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <TextBlock Text="ACME Sales Corp" Grid.Row="0" FontSize="48" Margin="0,20,73,20" Grid.ColumnSpan="2"/>
+        <TextBlock Text="First Name:" Grid.Row="1" Grid.Column="0" Margin="0,10,0,10" />
+        <TextBox  Grid.Row="1" Grid.Column="1" Margin="0,10,0,10" />
+        <TextBlock x:ConnectionId='2' Text="Last Name:" Name="tbName" Grid.Row="2" Grid.Column="0" Margin="0,10,0,10" />
+        <TextBox Grid.Row="2" Grid.Column="1" Margin="0,10,0,10" />
+        <TextBlock Text="Email:" Grid.Row="3" Grid.Column="0" Margin="0,10,0,10" />
+        <TextBox Grid.Row="3" Grid.Column="1" Margin="0,10,0,10" />
+        <Button Content="Save" Grid.Row="4" Grid.Column="4" ></Button>
+
+    </Grid>
+</Page>
+

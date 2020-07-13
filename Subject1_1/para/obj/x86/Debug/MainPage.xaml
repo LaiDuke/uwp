@@ -1,0 +1,39 @@
+﻿<Page
+    x:Class="para.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:para"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Page.Resources>
+        <Thickness x:Key="MarginText">0,10,20,10</Thickness>
+    </Page.Resources>
+    <Grid>
+        <Grid Width="500" Margin="0,0,0,0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"></RowDefinition>
+                <RowDefinition Height="auto"></RowDefinition>
+                <RowDefinition Height="auto"></RowDefinition>
+                <RowDefinition Height="auto"></RowDefinition>
+                <RowDefinition Height="auto"></RowDefinition>
+                <RowDefinition Height="auto"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto"></ColumnDefinition>
+                <ColumnDefinition Width="auto"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <TextBlock Text="Student Information" Grid.Row="0" Grid.Column="1" FontSize="20" Margin="0 20 0 20"/>
+            <TextBlock x:ConnectionId='2' Text="Id" Name="tbId" Grid.Row="1" Grid.Column="0" Margin="{StaticResource MarginText}"/>
+            <TextBox x:ConnectionId='3' Name="txtId" Grid.Row="1" Grid.Column="1" Margin="{StaticResource MarginText}"  />
+            <TextBlock x:ConnectionId='4' Text="Name" Name="tbName" Grid.Row="2" Grid.Column="0" Margin="{StaticResource MarginText}" />
+            <TextBox x:ConnectionId='5' Name="txtName" Grid.Row="2" Grid.Column="1" Margin="{StaticResource MarginText}" />
+            <TextBlock x:ConnectionId='6' Text="DateOfBirth" Name="tbDateOfBirth" Grid.Row="3" Grid.Column="0" Margin="{StaticResource MarginText}" />
+            <DatePicker x:ConnectionId='7'  Name="txtDateOfBirth" Grid.Row="3" Grid.Column="1" Margin="{StaticResource MarginText}"  />
+            <Button x:ConnectionId='8' Content="Submit" Name="btnSubmit" Grid.Row="4" Grid.Column="4"                        ></Button>
+        </Grid>
+    </Grid>
+</Page>
+
